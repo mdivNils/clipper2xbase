@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
 <version number="1.0" />
 <session>
-  <active target=".\zeitXba.exe" />
+  <active file=".\main.prg" />
+  <openfiles>
+    <openfile path=".\main.prg" column="34" line="145" />
+  </openfiles>
 </session>

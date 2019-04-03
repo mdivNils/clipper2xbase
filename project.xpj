@@ -3,11 +3,11 @@
     Project.xpj
 
 [Project.xpj]
-    zeitXba.exe
+    clipper2xbase.exe
 
-[zeitXba.exe]
+[clipper2xbase.exe]
     COMPILE       = xpp
-    COMPILE_FLAGS = /q /w /wi /wl /wu
+    COMPILE_FLAGS = /wi /wl /wu /b /q /w 
     DEBUG         = yes
     GUI           = yes
     LINKER        = alink
@@ -17,7 +17,7 @@
     INTERMEDIATE_DEBUG   = .debug
     INTERMEDIATE_RELEASE = .release
 // $START-AUTODEPEND
-    ZEIT.obj
+    main.obj
 // $STOP-AUTODEPEND
-    ..\..\..\zeit\ZEIT.PRG
+    main.prg
 
