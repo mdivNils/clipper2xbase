@@ -17,9 +17,11 @@
     INTERMEDIATE_DEBUG   = .debug
     INTERMEDIATE_RELEASE = .release
 // $START-AUTODEPEND
+    functions.obj
     main.obj
 // $STOP-AUTODEPEND
     XBTBASE1.LIB
     XBTBASE2.LIB
+    functions.prg
     main.prg
 

@@ -3,6 +3,7 @@
 <session>
   <active file=".\main.prg" />
   <openfiles>
-    <openfile path=".\main.prg" column="34" line="145" />
+    <openfile path=".\main.prg" column="3" line="512" />
+    <openfile path=".\functions.prg" column="6" line="19" />
   </openfiles>
 </session>
