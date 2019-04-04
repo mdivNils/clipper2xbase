@@ -1,0 +1,20 @@
+FATAL ERROR LOG 
+Error within the error handling!
+SYS Thread-ID: 1052 
+Module: EXE
+Error Codes: EH: 5 Sub: -1073741819(c0000005) OS: 0 XPP: 41
+Call Stack of Thread 1 (1052):
+@BASEWINDOW@I@WBGSAVE(415)
+@VCRTWINDOW@I@INIT(109)
+WOPEN(316)
+FENSTER(131)
+ZEIT_ANAB(236)
+MAIN(68)
+Call Stack of GUI Thread (1216):
+Call Stack of Thread 3 (1616):
+__CHECKSCROLLSTATE(102)
+Call Stack of Thread 4 (1824):
+__CHECKSCROLLSTATE(102)
+File: C:\Users\Sheepard\Documents\GitHub\clipper2xbase\clipper2xbase.exe
+TimeStamp: 20190404 18:47
+End of FATAL ERROR LOG.

@@ -238,23 +238,24 @@ fenster(10, 10, 12, 70, .T.)
 READ
 WClose()
 IF LASTKEY() = 27 .OR. EMPTY( m_buch )
-        RETURN( NIL )
+   RETURN( NIL )
 ENDIF
 
 USE aerzte
-buchstabe = m_buch
-IF !Found()
+buchstabe = M_Buch
+IF !Found(buchstabe)
    MsgBox("Zeichen existieren nicht!")
    USE
-   RETU
+   RETURN
 ELSE
-        MUser = USERNAME
+   MUser = USERNAME
 ENDIF
 USE
 IF _anab = "2"
         Zeit_list()
    RETURN
 ENDIF
+
 mTime = Time()
 nSec := Seconds()
 open_Zeiten()
@@ -384,20 +385,20 @@ PROCEDURE Open_zeiten
 ***********************************************************
 USE zeiten EXCL
 IF File("zeiten.ntx")
-        SET INDEX TO zeiten
+   SET INDEX TO zeiten
 ELSE
-        fenster(10, 10, 12, 70, .T.)
+   fenster(10, 10, 12, 70, .T.)
    @ 1,1 SAY "Bitte einen Moment, reorganisiere Datei ..."
    INDEX ON BUCHSTABE+DTOS(datum) TO zeiten
         WClose()
 ENDIF
 IF File("zeitend.ntx")
-        SET INDEX TO zeitenD
+   SET INDEX TO zeitenD
 ELSE
-        fenster(10,10,12,70, .T.)
+   fenster(10,10,12,70, .T.)
    @ 1,1 SAY "Bitte einen Moment, reorganisiere Datei ..."
    INDEX ON buchstabe+DESCEND(DTOS(datum)+zeit) TO zeitenD
-        WClose()
+   WClose()
 ENDIF
 SET INDEX TO zeiten, zeitend
 
