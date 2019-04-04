@@ -9,7 +9,7 @@
 	<site id="MainForm.MainSite">
 		<zone kind="HORZ">
 			<zone kind="VERT" size="213" dsize="0.226595744680851">
-				<zone kind="TABS" activetab="0" size="1052" dsize="1">
+				<zone kind="TABS" activetab="0" size="1053" dsize="1">
 					<zone kind="PANEL" id="MainForm.ProjectManagerDockPanel" visible="1"/>
 					<zone kind="PANEL" id="MainForm.CodeExplorerDockPanel" visible="1"/>
 				</zone>
@@ -21,11 +21,11 @@
 					<zone kind="PANEL" id="MainForm.ThreadsDockPanel" visible="0"/>
 					<zone kind="PANEL" id="MainForm.BreakpointsDockPanel" visible="0"/>
 				</zone>
-				<zone kind="TABS" activetab="0" size="881" dsize="0.84225621414914" isspace="1">
+				<zone kind="TABS" activetab="0" size="882" dsize="0.842406876790831" isspace="1">
 					<zone kind="PANEL" id="MainForm.frmClipperEditWindowDockPanel" visible="1"/>
 					<zone kind="PANEL" id="MainForm.OutputWindowDockPanel" visible="1"/>
 				</zone>
-				<zone kind="TABS" activetab="0" size="165" dsize="0.15774378585086">
+				<zone kind="TABS" activetab="0" size="165" dsize="0.157593123209169">
 					<zone kind="PANEL" id="MainForm.IDEMessageFormDockPanel" visible="1"/>
 					<zone kind="PANEL" id="MainForm.IDESearchResultFormDockPanel" visible="1"/>
 					<zone kind="PANEL" id="MainForm.IDEErrorCallstackFormDockPanel" visible="1"/>
