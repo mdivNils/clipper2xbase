@@ -1,0 +1,33 @@
+
+------------------------------------------------------------------------------
+FEHLERPROTOKOLL von "C:\Users\Sheepard\Documents\GitHub\clipper2xbase\clipper2xbase.exe" Datum: 04.04.2019 18:17:10
+
+Xbase++ Version     : Xbase++ (R) Version 2.00.1087
+Betriebssystem      : Windows 10 1809 Build 17763
+------------------------------------------------------------------------------
+oError:args         :
+          -> VALTYPE: L VALUE: .F.
+          -> VALTYPE: U VALUE: NIL
+          -> VALTYPE: C VALUE: aerzte
+          -> VALTYPE: U VALUE: NIL
+          -> VALTYPE: U VALUE: NIL
+          -> VALTYPE: L VALUE: .F.
+oError:canDefault   : J
+oError:canRetry     : J
+oError:canSubstitute: N
+oError:cargo        : NIL
+oError:description  : Datei kann nicht ge”ffnet werden
+oError:filename     : 
+oError:genCode      :         71
+oError:operation    : DbUseArea
+oError:osCode       :          0
+oError:severity     :          2
+oError:subCode      :       8999
+oError:subSystem    : BASE
+oError:thread       :          1
+oError:tries        :          1
+------------------------------------------------------------------------------
+CALLSTACK:
+------------------------------------------------------------------------------
+Aufgerufen von ZEIT_ANAB(244)
+Aufgerufen von MAIN(68)
