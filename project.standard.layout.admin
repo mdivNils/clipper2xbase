@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sitelist name="Standard">
 	<site floating="1" left="792" top="713" width="240" height="165">
-		<zone kind="PANEL" id="MainForm.WatchDockPanel" visible="0"/>
+		<zone kind="PANEL" id="MainForm.ModulesDockPanel" visible="0"/>
 	</site>
 	<site floating="1" left="792" top="713" width="240" height="165">
-		<zone kind="PANEL" id="MainForm.ModulesDockPanel" visible="0"/>
+		<zone kind="PANEL" id="MainForm.WatchDockPanel" visible="0"/>
 	</site>
 	<site id="MainForm.MainSite">
 		<zone kind="HORZ">

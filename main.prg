@@ -20,20 +20,12 @@
 #include "box.ch"
 #include "dbstruct.ch"
 #include "AppEvent.ch"
-// damit geht wOpen und wClose
+// Benötigte Bibliotheken für WOpen() und WClose()
 #pragma library( "XBTBASE1.LIB" )
 #pragma library( "XBTBASE2.LIB" )
 
-// In the example, various variables are initialized.
-// They can be edited by Get objects created with
-// different options.
-
+// statisch variable bGrafik auf True
 STATIC bGrafik := .T.
-
-PROCEDURE DbeSys()
-   DbeSetDefault()
-RETURN
-
 
 
 PROCEDURE Main()
@@ -172,6 +164,4 @@ oXbp:caption := caption
 oXbp:create(, , {nRow, nCol})
 
 RETURN
-
-
 

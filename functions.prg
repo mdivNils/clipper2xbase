@@ -27,7 +27,7 @@ LOCAL aTage 		:= {}
 LOCAL aMonate		:= {}
 LOCAL aWochen		:= {}
 LOCAL cBuch 		:= " "
-LOCAL dVon 			:= dBis := DATE()
+LOCAL dVon 			:= dBis := Date()
 LOCAL dDatum, cAnAb, nSekunden
 
 DbUseArea(.T., , "aerzte")
@@ -264,15 +264,15 @@ IF anab = _anab
    RETURN
 ENDIF
 fenster( 10, 10, 14, 70, .T.)
-@ 1,1 SAY "Sie sind USER " + TRIM(muser)+"."
+@ 1,1 SAY "Sie sind USER " + Trim(muser)+"."
 IF _anab = "1"										// anmelden
    @ 2,1 SAY "Angemeldet um: "+mtime
 ELSE                                      // abmelden
    @ 2,1 SAY "Abgemeldet um: "+mtime
 ENDIF
 @ 3,1 SAY "Best?tigen mit RETURN, Abbruch mit ESC!"
-INKEY(0)
-wclose()
+Inkey(0)
+WClose()
 IF LastKey() = K_RETURN
    APPE BLAN
    REPL 	buchstabe WITH m_buch, datum WITH Date(), anab WITH _anab,;
