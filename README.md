@@ -14,3 +14,6 @@
 - Harbour Project installiert
 - Windows XP VM Aufgesetzt um das clipper programm ansehen zu können
 - clipper Programm hat bei Datenverbindung, sagt aber bei egal welchem Zeichen, dass dies nicht existiert.
+- Windows XP /Win7 gibt Error aus wegen fehlender \praxis\ config.DBF
+- angefangen das clipper Programm mit Window darzustellen
+
