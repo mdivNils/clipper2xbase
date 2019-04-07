@@ -6,3 +6,11 @@
 - durchstöbern von foren nach einer lösung von wOpen in xbase - xbasetools3
 - refactoring
 - lösungssuche für fehlende treiber unf menüs
+
+06.04.2019/07.04.2019
+
+- Visual FlagShip8 Daten angefordert (haben 1 "work" tag bearbeitungszeit)
+- X# installiert
+- Harbour Project installiert
+- Windows XP VM Aufgesetzt um das clipper programm ansehen zu können
+- clipper Programm hat bei Datenverbindung, sagt aber bei egal welchem Zeichen, dass dies nicht existiert.
