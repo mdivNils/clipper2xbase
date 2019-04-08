@@ -80,11 +80,11 @@ DO WHILE zeiten->buchstabe = cBuch
                 aMonate[ nPos, 3 ] := aMonate[ nPos, 3 ] + nStunden
                 DbSkip()
         ENDIF
-ENDDO
-ASort( aMonate, NIL, NIL, {|aEle1, aEle2| aEle1[ 1 ] < aEle2[ 1 ] } )
-nKumIst := 0
-nKumSoll := 0
-FOR i := 1 TO Len( aMonate )
+	ENDDO
+   ASort( aMonate, NIL, NIL, {|aEle1, aEle2| aEle1[ 1 ] < aEle2[ 1 ] } )
+   nKumIst := 0
+   nKumSoll := 0
+   FOR i := 1 TO Len( aMonate )
         nKumIst := nKumIst + aMonate[ i, 3 ]
         aMonate[ i, 5 ] := nKumIst
         nKumSoll := nKumSoll + aMonate[ i, 4 ]
@@ -226,7 +226,7 @@ ENDDO
 
 RETURN
 ***********************************************************
-* an und abmelden am system
+* an und abmelden am system   // 1 0 2
 PROCEDURE zeit_anab (_anab)
 ***********************************************************
 LOCAL buchstabe
@@ -241,8 +241,8 @@ IF LASTKEY() = 27 .OR. EMPTY( m_buch )
    RETURN( NIL )
 ENDIF
 
-USE aerzte
-buchstabe = M_Buch
+USE aerzte NEW VIA "DBFNTX"
+buchstabe := M_Buch
 IF !Found(buchstabe)
    MsgBox("Zeichen existieren nicht!")
    USE

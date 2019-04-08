@@ -60,12 +60,20 @@ PROCEDURE Main
    SetAppWindow( oDlg )
    SetAppFocus ( oDlg )
 
+   oMenuBar := oDlg:menuBar()
+   menuCreate( oMenuBar )
+
    // permanent loop to wait for events and handle them, needed or the window will be closed instant
    DO WHILE .T.
       nEvent := AppEvent( @mp1, @mp2, @oXbp )
       oXbp:handleEvent( nEvent, mp1, mp2 )
    ENDDO
 
+RETURN
+
+
+PROCEDURE userLogin( username, password )
+	// login for user
 
 
 RETURN

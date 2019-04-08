@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
 <version number="1.0" />
 <session>
-  <active file=".\main.prg" />
+  <active file=".\functions.prg" target=".\clipper2xbase.exe" />
   <openfiles>
-    <openfile path=".\main.prg" column="3" line="512" />
-    <openfile path=".\functions.prg" column="6" line="19" />
+    <openfile path=".\functions.prg" column="0" line="228" />
+    <openfile path=".\main.prg" column="18" line="67" />
   </openfiles>
 </session>

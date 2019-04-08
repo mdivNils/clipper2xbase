@@ -46,7 +46,7 @@ PROCEDURE menuCreation( oDlg)
       AAdd(aControls, oXbp)   // add new Form Input to Menu Array
 
       /*
-       * New Input Field "PAssword"
+       * New Input Field "Password"
       */
 
       oXbp         := XbpStatic():new( oStatic,, {310,240}, {80,20} )

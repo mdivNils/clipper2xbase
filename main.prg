@@ -29,8 +29,8 @@ STATIC bGrafik := .T.
 
 
 PROCEDURE Main()
-        LOCAL nEvent, mp1, mp2
-        PUBLIC caz := "\praxis\"
+	LOCAL nEvent, mp1, mp2
+   PUBLIC caz := "\praxis\"
    SET DATE TO GERMAN
    SET CENTURY ON
 
@@ -55,33 +55,32 @@ PROCEDURE Main()
 
    @ 10, 10 PROM "1. Anmelden"
    @ 11, 10 PROM "2. Abmelden"
-        @ 12, 10 PROM "3. Stundenauswertung"
+   @ 12, 10 PROM "3. Stundenauswertung"
    // @ 14 ,10 PROM "M. Mitarbeiterstammdaten festlegen"
-        // @ 15,10 PROM "A. Arbeitszeitkonto"
-        @ 17, 10 PROM "E. Ende"
+   // @ 15,10 PROM "A. Arbeitszeitkonto"
+   @ 17, 10 PROM "E. Ende"
 
    MENU TO zeitmen
 
-            DO CASE
+   	DO CASE
 
-              CASE zeitmen = 1
-                 Zeit_Anab("1")
+         CASE zeitmen = 1
+            Zeit_Anab("1")
 
-               CASE zeitmen = 2
-                 Zeit_Anab("0")
+          CASE zeitmen = 2
+            Zeit_Anab("0")
 
-               CASE zeitmen = 3
-                 Zeit_Anab("2")
+          CASE zeitmen = 3
+            Zeit_Anab("2")
 
-               CASE zeitmen = 4 .OR. LastKey() = K_ESC
-                  EXIT
-               CASE zeitmen = 5
-                 PStammData()
-               CASE zeitmen = 6
-          azkonto()
+          CASE zeitmen = 4 .OR. LastKey() = K_ESC
+             EXIT
+          CASE zeitmen = 5
+            PStammData()
+          CASE zeitmen = 6
+     			azkonto()
 
-            ENDCASE
-
+      ENDCASE
    ENDDO
    CLOSE DATABASE
    QUIT
